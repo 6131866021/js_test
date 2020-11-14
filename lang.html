@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" http-equiv="refresh" content="30"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>How to write JavaScript language?</title>
+    </head>
+
+    <body>
+        <h1>What JavaScript can do?</h1>
+        <p id="demo">JavaScript can change HTML content.</p>
+        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello World!"'>Hello World</button>
+
+        <!-- Hide and Display innerHTML -->
+        <button type="button" onclick='document.getElementById("demo").style.display = "none"'>Delete</button>
+        <button type="button" onclick='document.getElementById("demo").style.display = "block"'>Show Again</button>
+        <button type="button" onclick='myFunction()'>JavaScript</button>
+
+        <!-- overwrite document HTML will be deleted -->
+        <button type="button" onclick='overwriteFunction()'>Overwrite</button>
+        <button type="button" onclick='consoleFunction()'>console.log</button>
+        <button type="button" onclick='print()'>Print this page</button><br><br>
+
+        <input type="text" name="number" id="number"><br><br>
+
+        <button type="button" onclick='displayDate()'>What the time is it?</button>
+
+        <button type="button" onclick='showAuthorInfo()'>My Info</button>
+        <button type="button" onclick='reverseSort()'>Reverse Sort</button>
+        <button type="button" onclick='pointSort()'>Point Sort</button>
+        <button type="button" onclick='arrow()'>Arrow function</button><br><br>
+
+        <!-- Add Event Listener -->
+        <button id="objectbtn">EventListener</button>
+        <button id="agebtn">See My Age</button>
+        <button id="callbackbtn">Callback Function</button>
+        <button id="awaitbtn">Await Function</button>        
+    </body>
+
+    <script src="./lang.js"></script>
+</html>

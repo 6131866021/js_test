@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" http-equiv="refresh" content="30"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>How to write JavaScript language?</title>
+        <link rel="stylesheet" href="./clock.css">
+    </head>
+
+    <body onload="startTime()">
+        <h1>LOLCAT CLOCK</h1>
+        <br><br>
+        <h2>I CAN HAZ TIME??</h2>
+        <h3 id="time"></h2>
+        <br><br>
+        <img id="photo" src="sleep.jpg" style="width: 30%;"><br><br><br>
+
+        <label for="wake">Set wake up time</label>
+        <select id="wake">
+            <option value="morning">8AM - 9AM</option>
+            <option value="noon">12AM - 1PM</option>
+            <option value="evening">3PM - 4PM</option>
+        </select><br><br>
+
+        <label for="lunch">Set lunch time</label>
+        <select id="lunch">
+            <option value="noon">12AM - 1PM</option>
+            <option value="morning">8AM - 9AM</option>
+            <option value="evening">3PM - 4PM</option>
+        </select><br><br>
+
+        <label for="nap">Set nap time</label>
+        <select id="nap">
+            <option value="evening">3PM - 4PM</option>
+            <option value="morning">8AM - 9AM</option>
+            <option value="noon">12AM - 1PM</option>
+        </select><br><br>
+
+        <button onclick="partyTime()">PARTY TIME!</button><br><br>
+
+        <h4>@Sasinat T.</h4>
+    </body>
+
+    <script src="./clock.js"></script>
+</html>
