@@ -1,0 +1,37 @@
+body {
+    background: rgba(0, 128, 0, 0.3); /* Green background with 30% opacity */
+    height: 100%;
+    animation: move 10s infinite;
+}
+
+@keyframes move {
+    from {background-color: forestgreen;}
+    to {background-color: skyblue};
+}
+
+.tab {
+    text-align: center;
+    padding: 20px;
+}
+
+.tab select {
+    font-size: 20px;
+    background-color: transparent #E5E5E5;
+    width: 130px;
+    height: 40px;
+    opacity: 70%;
+}
+
+.tab button {
+    font-size: 20px;
+    background-color: transparent #E5E5E5;
+    width: 130px;
+    height: 40px;
+    opacity: 70%;
+    transition-duration: 0.4s;
+}
+
+.tab button:hover {
+    background-color: thistle;
+    color: white;
+}
