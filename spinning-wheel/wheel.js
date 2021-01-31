@@ -3,6 +3,7 @@ function myfunction() {
     var y = 9999;   // max value
     
     var deg = Math.floor(Math.random() * (x-y)) + y;
+    console.log(deg);
     document.getElementById("box").style.transform = "rotate("+deg+"deg)";
 
     var element = documet.getElementById('mainbox');
