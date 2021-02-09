@@ -1,6 +1,23 @@
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+class App extends Component {
+  render() {
+    return (                                      // JSX not html 
+      <div className="App">
+        <h1>Hi, I'm a React app</h1>
+      </div>
+    );
+    // return React.createElement('div', {className: 'App'}, React.createElement('h1', null, 'Hi, I\'m a React App'));
+  }
+}
+
+export default App;                                 // ES6 JS
+
+
+
+/*
 function App() {
   return (
     <div className="App">
@@ -21,5 +38,4 @@ function App() {
     </div>
   );
 }
-
-export default App;
+*/
