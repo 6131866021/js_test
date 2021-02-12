@@ -86,6 +86,12 @@ const App = props => {
     }
     */
 
+  const deletePersonHandler = (personIndex) => {
+
+  }
+
+  render() {
+
   return (                                      // JSX not html
 
     <div className="app">
@@ -106,7 +112,9 @@ const App = props => {
               changed={nameChangedHandler} />
       })}
     </div>
+
   )
+  };
 }
 
 export default App;                                 // ES6 JS
