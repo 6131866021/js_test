@@ -1,5 +1,5 @@
 {
     "jupyter.jupyterServerType": "local",
     "git.ignoreLimitWarning": true,
-    "python.pythonPath": "/Users/sasinatthiwathittayanuphap/Desktop/Project/js/JavaScript_Test/py/env/bin/python3.8"
+    "python.pythonPath": "env/bin/python"
 }
