@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import styled from 'styled-components';
 
-import './App.css';
+import classes from './App.css';
 import Person from './Person/Person';
 
 /* 
@@ -72,6 +72,8 @@ class App extends Component {
   }
 
   render() {
+
+    /* 
     const style = {                              // in-line style
       backgroundColor: 'white',
       font: 'inherit',
@@ -83,22 +85,28 @@ class App extends Component {
         color: 'black'
       }
     };
+    */
 
     let persons = null;
+    let btnClass = [classes.Button];
 
     if(this.state.showPersons) {
       persons = (
         <div>
           {this.state.persons.map((person, index) => {
-            return <Person
-              click={() => this.deletePersonHandler(index)}
-              name={person.name}
-              age={person.age}
-              key={person.id}
-              change={(event) => this.nameChangedHandler(event, person.id)} />
+            return ( <Person
+                click={() => this.deletePersonHandler(index)}
+                name={person.name}
+                age={person.age}
+                key={person.id}
+                change={(event) => this.nameChangedHandler(event, person.id)} 
+              />
+            );
           })}
         </div>
       );
+
+      btnClass = classes.Red;
     }
 
       /* 
@@ -110,23 +118,23 @@ class App extends Component {
 
       */
 
-    const classes = [];
+    const assignedClasses = [];
     if(this.state.persons.length <= 2) {
-      classes.push('red');                        // classes = ['red']
+      assignedClasses.push(classes.red);                        // classes = ['red']
     }
     if(this.state.persons.length <= 1) {
-      classes.push('bold');                       // classes = ['red', 'bold']
+      assignedClasses.push(classes.bold);                       // classes = ['red', 'bold']
     }
 
-    return (                                      // JSX not html
-      <div className="App">
+    return (                                                    // JSX not html
+      <div className={classes.App}>
         <h1>Hi, I'm a React app</h1>
-        <p>This is really working!</p>
-        <StyledButton alt={this.state.showPersons} onClick={this.togglePersonsHandler}>
+        <p className={assignedClasses.join(' ')}>This is really working!</p>
+        <button className={btnClass.join(' ')} onClick={this.togglePersonsHandler}>
           Toggle Persons
-        </StyledButton>
+        </button>
         {persons}
-        </div>
+      </div>
     );
 
     // return React.createElement('div', {className: 'App}, React.)
@@ -136,7 +144,7 @@ class App extends Component {
 
 export default App;                                 // ES6 JS
 
-  /* 
+/* 
 in return
    {personsState.persons.map(person => {
               return <Person 
