@@ -1,8 +1,3 @@
-function submit() {
-    document.getElementById("submit").style.display = 'none'
-    document.getElementById("mainbox").style.display = 'block'
-}
-
 function myfunction() {
     var x = 1000;   // min value
     var y = 1689;   // max value
