@@ -1,7 +1,7 @@
-==> 2021-02-13 11:21:02 <==
+==> 2021-02-18 23:58:25 <==
 # cmd: /Users/sasinatthiwathittayanuphap/opt/miniconda3/bin/conda create --prefix ./env pandas numpy matplotlib scikit-learn
 # conda version: 4.9.2
-+defaults/noarch::joblib-1.0.0-pyhd3eb1b0_0
++defaults/noarch::joblib-1.0.1-pyhd3eb1b0_0
 +defaults/noarch::olefile-0.46-py_0
 +defaults/noarch::pyparsing-2.4.7-pyhd3eb1b0_0
 +defaults/noarch::python-dateutil-2.8.1-pyhd3eb1b0_0
@@ -25,8 +25,8 @@
 +defaults/osx-64::libtiff-4.1.0-hcb84e12_1
 +defaults/osx-64::llvm-openmp-10.0.0-h28b9765_0
 +defaults/osx-64::lz4-c-1.9.3-h23ab428_0
-+defaults/osx-64::matplotlib-3.3.2-hecd8cb5_0
-+defaults/osx-64::matplotlib-base-3.3.2-py38h181983e_0
++defaults/osx-64::matplotlib-3.3.4-py38hecd8cb5_0
++defaults/osx-64::matplotlib-base-3.3.4-py38h8b3ea08_0
 +defaults/osx-64::mkl-2019.4-233
 +defaults/osx-64::mkl-service-2.3.0-py38h9ed2024_0
 +defaults/osx-64::mkl_fft-1.2.0-py38hc64f4ea_0
@@ -50,4 +50,4 @@
 +defaults/osx-64::xz-5.2.5-h1de35cc_0
 +defaults/osx-64::zlib-1.2.11-h1de35cc_3
 +defaults/osx-64::zstd-1.4.5-h41d2c2f_0
-# update specs: ['pandas', 'scikit-learn', 'matplotlib', 'numpy']
+# update specs: ['scikit-learn', 'numpy', 'pandas', 'matplotlib']
